@@ -1,8 +1,6 @@
-package Beecrowd;
-
 import java.util.Scanner;
 
-public class B1170 {
+public class Bee1170 {
     public static void main(String [] args) {
         Scanner scanner = new Scanner(System.in);
         int days;
