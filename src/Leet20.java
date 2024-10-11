@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-class Leet20 {
+public class Leet20 {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
