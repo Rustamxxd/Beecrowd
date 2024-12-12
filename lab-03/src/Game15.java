@@ -10,7 +10,7 @@ public class Game15 extends PApplet {
     private float extent;
     private boolean invalidKeyPressed = false;
     private int invalidKeyTime = 0;
-    private int moveCount = 0;
+    private int moveCount = 0; // Счетчик ходов
 
     @Override
     public void settings() {
@@ -52,6 +52,8 @@ public class Game15 extends PApplet {
         textSize(40);
         text("Use ↑ ↓ ← → ", 390, height / 2f - 10);
 
+
+
         init();
 
         for (int i = 0; i < 4; i++) {
@@ -76,7 +78,7 @@ public class Game15 extends PApplet {
     public void init() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                fill(0, 0, 255);
+                fill(0, 0, 255); // Синий цвет для клеток
                 square(x + extent * j, y + i * extent, extent);
             }
         }
@@ -89,19 +91,15 @@ public class Game15 extends PApplet {
 
         switch (keyCode) {
             case UP:
-                // TODO
                 move = up();
                 break;
             case DOWN:
-                // TODO
                 move = down();
                 break;
             case LEFT:
-                // TODO
                 move = left();
                 break;
             case RIGHT:
-                // TODO
                 move = right();
                 break;
             case 82:
